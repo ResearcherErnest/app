@@ -28,7 +28,7 @@ states_geojson = requests.get("https://raw.githubusercontent.com/PublicaMundi/Ma
 
 # Initialize Dash app
 app = Dash(__name__)
-
+server = app.server
 # Layout
 app.layout = html.Div(children=[
     html.H1(
